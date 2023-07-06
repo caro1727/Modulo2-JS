@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Inicio </title>
+</head>
+
+<body>
+    <h1>Bienvenido a tu banco online</h1>
+
+    <div class="formularioCuenta">
+        <form action="">
+            <div class="cuenta1">
+                <label for="cuentaOne">Cuenta No. 1 Saldo: </label>
+                <input type="text" name="cuentaOne" id="cuentaOne" value="1200">
+            </div>
+            <div class="cuenta2">
+                <label for="cuentaTwo">Cuenta No. 2 Saldo: </label>
+                <input type="text" name="cuentaTwo" id="cuentaTwo" value="800">
+            </div>
+        </form>
+    </div>
+
+    <div class="formularioTransferencia">
+        <form action="">
+            <h2>Transferencias</h2>
+            <div class="cantidad">
+                <input type="text" name="cantidad" id="cantidad" placeholder="Cantidad">
+            </div>
+            <div class="bottonTransferencia">
+                <input type="button" value="Transferencia de cuenta 1 a 2" id="bt1" onclick="ecuacion1()">
+                <input type="button" value="Transferencia de cuenta 2 a 1" id="bt2" onclick="ecuacion2()">
+                <input type="button" value="Depositar a cuenta No. 1" id="bt3" onclick="ecuacion3()">
+                <input type="button" value="Depositar a cuenta No. 2" id="bt4" onclick="ecuacion4()">
+                <input type="button" value="Retirar de cuenta No. 1" id="bt5" onclick="ecuacion5()">
+                <input type="button" value="Retirar de cuenta No. 2" id="bt6" onclick="ecuacion6()">
+            </div>
+
+        </form>
+    </div>
+    <script src="./ecuaciones.js"></script>
+</body>
+
+</html>
